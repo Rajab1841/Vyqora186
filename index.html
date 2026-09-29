@@ -1,1 +1,491 @@
-sasindex.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>⚡ A15Vyqora · HOT DEALS 🔥</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, 'Segoe UI', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .offer-card {
+            background: rgba(25, 15, 45, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 2.5rem;
+            border: 1px solid rgba(180, 130, 255, 0.5);
+            padding: 2.2rem 2rem;
+            max-width: 1400px;
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(170, 120, 255, 0.3) inset, 0 0 40px rgba(138, 43, 226, 0.3);
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #c77dff, #ff6b9d, #ffd166);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.3rem;
+        }
+        h1 i { background: none; font-size: 2.2rem; color: #e0aaff; filter: drop-shadow(0 0 8px #c77dff); -webkit-text-fill-color: #e0aaff; }
+        .sub-head {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #d4b8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border-bottom: 1px dashed rgba(180, 130, 255, 0.5);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .popup-settings-wrapper { text-align: center; margin-bottom: 1rem; }
+        .popup-settings-btn {
+            background: linear-gradient(135deg, #ff9800, #f44336);
+            border: none;
+            border-radius: 40px;
+            padding: 12px 28px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .popup-settings-btn:hover { transform: scale(1.05); box-shadow: 0 0 35px rgba(255, 152, 0, 0.8); }
+        .popup-note { display: block; color: #ffcc80; font-size: 0.8rem; margin-top: 6px; }
+        .settings-panel {
+            background: rgba(40, 20, 70, 0.5);
+            border-radius: 20px;
+            padding: 15px 20px;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border: 1px solid #b47aff44;
+        }
+        .settings-panel label { color: #e0aaff; font-weight: 600; font-size: 0.95rem; white-space: nowrap; }
+        .settings-panel input {
+            width: 70px;
+            padding: 8px 12px;
+            border-radius: 30px;
+            border: 2px solid #c77dff;
+            background: #1a0b2e;
+            color: #ffd166;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+            outline: none;
+        }
+        .settings-panel input:focus { border-color: #ffd166; box-shadow: 0 0 12px #ffd16655; }
+        .settings-panel input.limit-input {
+            width: 60px;
+            padding: 6px 8px;
+            font-size: 0.9rem;
+            border-color: #06d6a0;
+        }
+        .settings-panel input.limit-input:focus { border-color: #06d6a0; box-shadow: 0 0 12px #06d6a055; }
+        .save-btn {
+            background: linear-gradient(135deg, #06d6a0, #0d5240);
+            border: none;
+            border-radius: 30px;
+            padding: 8px 18px;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .save-btn:hover { transform: scale(1.05); box-shadow: 0 0 15px #06d6a0; }
+        .auto-click-wrapper { text-align: center; margin-bottom: 1.5rem; }
+        .auto-click-btn {
+            background: linear-gradient(135deg, #ff6b9d, #c77dff);
+            border: none;
+            border-radius: 60px;
+            padding: 1rem 2.5rem;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 30px rgba(255, 107, 157, 0.6);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+        .auto-click-btn:hover { transform: scale(1.05); box-shadow: 0 0 50px rgba(255, 107, 157, 0.9); }
+        .auto-click-btn:disabled { background: #555; cursor: not-allowed; box-shadow: none; opacity: 0.6; }
+        .auto-status { display: block; margin-top: 10px; color: #ffd166; font-weight: 600; font-size: 0.95rem; min-height: 22px; }
+        .click-dashboard {
+            background: rgba(40, 20, 70, 0.6);
+            border-radius: 60px;
+            padding: 0.8rem 2rem;
+            margin-bottom: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px 25px;
+            border: 1px solid #b47aff66;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(180, 122, 255, 0.2);
+        }
+        .total-clicks { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.3rem; color: #f0e2ff; }
+        .total-clicks i { font-size: 2rem; color: #ffb3c6; filter: drop-shadow(0 0 6px #ff6b9d); }
+        .click-badge {
+            background: #1a0b2ecc;
+            backdrop-filter: blur(4px);
+            padding: 8px 28px;
+            border-radius: 50px;
+            border: 1px solid #ffd166;
+            box-shadow: 0 0 15px #ffd16633;
+        }
+        .click-badge span { font-weight: 800; font-size: 2.2rem; color: #ffd166; margin-left: 10px; letter-spacing: 1px; }
+        .legend { display: flex; gap: 20px; font-size: 0.9rem; font-weight: 500; }
+        .legend-item { display: flex; align-items: center; gap: 8px; }
+        .legend-dot { width: 16px; height: 16px; border-radius: 20px; background: #9d4edd; box-shadow: 0 0 8px #c77dff; }
+        .legend-dot.used { background: #06d6a0; box-shadow: 0 0 12px #06d6a0; }
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+        .offer-btn {
+            background: linear-gradient(135deg, #3c1e6b, #2a1548);
+            border: none;
+            border-radius: 60px;
+            padding: 0.85rem 0.6rem;
+            color: #f5edff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 0 1.5px #7b2cbf inset;
+            width: 100%;
+            text-decoration: none;
+            position: relative;
+            border: 1px solid #9d4edd55;
+        }
+        .offer-btn i { font-size: 1.2rem; color: #ffb3c6; }
+        .click-counter {
+            background: #1a0b2e;
+            border-radius: 40px;
+            padding: 2px 10px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #ffd166;
+            border: 1px solid #ffb347;
+            margin-left: 4px;
+        }
+        .offer-btn.clicked { background: linear-gradient(135deg, #0d5240, #073b2e); border: 1.5px solid #06d6a0; box-shadow: 0 0 18px #06d6a0, 0 0 0 1.5px #ffd166 inset; }
+        .offer-btn.clicked i { color: #ffea9f; }
+        .offer-btn.clicked .click-counter { background: #0a3328; color: #ffeaa6; border-color: #ffd966; }
+        .offer-btn:hover { transform: translateY(-4px) scale(1.03); background: linear-gradient(135deg, #5a2ca0, #3c1e6b); box-shadow: 0 18px 28px -8px black, 0 0 0 2.5px #e0aaff inset; }
+        .section-label { font-size: 1.15rem; margin: 18px 0 8px; color: #e0aaff; display: flex; align-items: center; gap: 10px; font-weight: 600; }
+        .section-label i { color: #ffb3c6; }
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            color: #cbb2ff;
+            border-top: 1px solid #b47aff66;
+            padding-top: 1.4rem;
+            font-size: 0.9rem;
+        }
+        .reset-link {
+            background: none;
+            border: 1.5px solid #e0aaff;
+            padding: 8px 22px;
+            border-radius: 50px;
+            color: #f0d6ff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+        .reset-link:hover { background: #b47aff30; border-color: #ffd166; color: #ffeaaf; }
+        @media (max-width: 700px) {
+            .offer-card { padding: 1.5rem 1.2rem; }
+            h1 { font-size: 2rem; }
+            .click-dashboard { flex-direction: column; align-items: stretch; border-radius: 40px; padding: 1.2rem; }
+            .btn-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+            .offer-btn { padding: 0.7rem 0.5rem; font-size: 0.8rem; }
+            .auto-click-btn { font-size: 1rem; padding: 0.8rem 1.8rem; }
+            .settings-panel { flex-direction: column; gap: 10px; }
+            .popup-settings-btn { font-size: 0.9rem; padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="offer-card">
+    <h1><i class="fas fa-crown"></i> A15Vyqora DEAL ZONE <i class="fas fa-bolt"></i></h1>
+    <div class="sub-head"><i class="fas fa-fire-flame-curved"></i> 50 PREMIUM OFFERS · ALL ACTIVE <i class="fas fa-gem"></i></div>
+
+    <div class="popup-settings-wrapper">
+        <button class="popup-settings-btn" onclick="openPopupSettings()"><i class="fas fa-cog"></i> ALLOW POPUPS FIRST (OPEN SETTINGS)</button>
+        <span class="popup-note">Click → Copy URL → Open new tab → Paste → Allow → Then START</span>
+    </div>
+
+    <div class="settings-panel">
+        <label for="roundInput">ROUNDS:</label>
+        <input type="number" id="roundInput" value="3" min="1" max="100" onchange="saveRoundSetting()">
+        <label for="limitInput">LIMIT:</label>
+        <input type="number" id="limitInput" class="limit-input" value="0" min="0" max="9999" placeholder="0=∞" onchange="saveRoundSetting()">
+        <button class="save-btn" onclick="saveRoundSetting()">SAVE</button>
+        <span style="color:#06d6a0;font-size:0.85rem;" id="saveConfirm"></span>
+    </div>
+
+    <div class="auto-click-wrapper">
+        <button class="auto-click-btn" id="autoClickBtn" onclick="startAutoClick()">START AUTO CLICK</button>
+        <div class="auto-status" id="autoStatus">Ready · <span id="roundDisplay">3</span> round(s) · limit <span id="limitDisplay">∞</span></div>
+    </div>
+
+    <div class="click-dashboard">
+        <div class="total-clicks"><i class="fas fa-chart-pie"></i><span>TOTAL CLAIMS</span></div>
+        <div class="click-badge"><i class="fas fa-fingerprint"></i> <span id="globalCounter">0</span></div>
+        <div class="legend"><div class="legend-item"><span class="legend-dot"></span> available</div><div class="legend-item"><span class="legend-dot used"></span> claimed</div></div>
+    </div>
+
+    <div class="section-label"><i class="fas fa-star"></i> HOT PREMIUM DEALS <i class="fas fa-star"></i></div>
+    <div class="btn-grid" id="offerGrid">
+        <!-- 1 -->
+        <a href="https://ensueddenied.com/crfgzjdu?key=02b3cbe59e5a798eb07f1bfd5c62807c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_1" bn="1"><i class="fas fa-database"></i> A15VYQORA BYTE 1 <span class="click-counter" id="count_1">0</span></a>
+        <!-- 2 -->
+        <a href="https://ensueddenied.com/gcftck0c?key=4b827bf0afb199570f320bf20e6d775c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_2" bn="2"><i class="fas fa-fire"></i> A15VYQORA ASH 2 <span class="click-counter" id="count_2">0</span></a>
+        <!-- 3 -->
+        <a href="https://ensueddenied.com/r6kmepc3d?key=b67f7bf61cfaf9a95cf1276940c553aa" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_3" bn="3"><i class="fas fa-ghost"></i> A15VYQORA PHANTOM 3 <span class="click-counter" id="count_3">0</span></a>
+        <!-- 4 -->
+        <a href="https://ensueddenied.com/tu63mrwi?key=038fe2aec319979e3b821992cd580b0c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_4" bn="4"><i class="fas fa-bitcoin"></i> A15VYQORA BTC 4 <span class="click-counter" id="count_4">0</span></a>
+        <!-- 5 -->
+        <a href="https://ensueddenied.com/k1rxsnkn?key=b0cb6630109d945659a4f996bd46fb48" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_5" bn="5"><i class="fas fa-rainbow"></i> A15VYQORA PRISM 5 <span class="click-counter" id="count_5">0</span></a>
+        <!-- 6 -->
+        <a href="https://ensueddenied.com/zq87u8rq?key=744446a1f0c141aab9a481189838067d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_6" bn="6"><i class="fas fa-square"></i> A15VYQORA PIXEL 6 <span class="click-counter" id="count_6">0</span></a>
+        <!-- 7 -->
+        <a href="https://ensueddenied.com/hetz4cfg03?key=49503e84cbdce3b3c6c871307f6cadad" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_7" bn="7"><i class="fas fa-gem"></i> A15VYQORA EMERALD 7 <span class="click-counter" id="count_7">0</span></a>
+        <!-- 8 -->
+        <a href="https://ensueddenied.com/d2kt4i2e?key=91b478909ec45340f2531253a18b5f66" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_8" bn="8"><i class="fas fa-pizza-slice"></i> A15VYQORA PIZZA 8 <span class="click-counter" id="count_8">0</span></a>
+        <!-- 9 -->
+        <a href="https://ensueddenied.com/dx2mrdsfb9?key=fada160a0869cfc688119ec854e64ad1" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_9" bn="9"><i class="fas fa-car-side"></i> A15VYQORA SIDE 9 <span class="click-counter" id="count_9">0</span></a>
+        <!-- 10 -->
+        <a href="https://ensueddenied.com/za1rnj7r?key=cd2fcfd14aaea430bd283de169942287" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_10" bn="10"><i class="fas fa-wand-magic-sparkles"></i> A15VYQORA MAGIC 10 <span class="click-counter" id="count_10">0</span></a>
+        <!-- 11 -->
+        <a href="https://ensueddenied.com/whz7db5tmb?key=d592ae11a78a52cfbd19f9eaf66cfd92" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_11" bn="11"><i class="fas fa-circle-notch"></i> A15VYQORA AURA 11 <span class="click-counter" id="count_11">0</span></a>
+        <!-- 12 -->
+        <a href="https://ensueddenied.com/iqyd3a46yp?key=1856e53b4b3cc2f17972506ba465627f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_12" bn="12"><i class="fas fa-dove"></i> A15VYQORA ANGEL 12 <span class="click-counter" id="count_12">0</span></a>
+        <!-- 13 -->
+        <a href="https://ensueddenied.com/yijs3uy1b?key=06a60f99b3022a960de8dc451ee2d2b4" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_13" bn="13"><i class="fas fa-wallet"></i> A15VYQORA WALLET 13 <span class="click-counter" id="count_13">0</span></a>
+        <!-- 14 -->
+        <a href="https://ensueddenied.com/gyd1m9v197?key=7458394dd76b04a1f43b6be4818ef83c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_14" bn="14"><i class="fas fa-dove"></i> A15VYQORA HAWK 14 <span class="click-counter" id="count_14">0</span></a>
+        <!-- 15 -->
+        <a href="https://ensueddenied.com/cde20hzwh?key=700a241f2acface7a075d376dbb0280c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_15" bn="15"><i class="fas fa-cloud"></i> A15VYQORA NEBULA 15 <span class="click-counter" id="count_15">0</span></a>
+        <!-- 16 -->
+        <a href="https://ensueddenied.com/tw82e7ha?key=f7375c13bdf762420b8225d7d64d1ad8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_16" bn="16"><i class="fas fa-dragon"></i> A15VYQORA DRAGON 16 <span class="click-counter" id="count_16">0</span></a>
+        <!-- 17 -->
+        <a href="https://ensueddenied.com/mns6gnzdze?key=f702afdb3d7d719394f0ab43a467d2e1" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_17" bn="17"><i class="fas fa-bolt"></i> A15VYQORA LASER 17 <span class="click-counter" id="count_17">0</span></a>
+        <!-- 18 -->
+        <a href="https://ensueddenied.com/wx6kzh4d?key=1ead9a8d05c7d689df615e5387e361d4" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_18" bn="18"><i class="fas fa-skull"></i> A15VYQORA REAPER 18 <span class="click-counter" id="count_18">0</span></a>
+        <!-- 19 -->
+        <a href="https://ensueddenied.com/nss67904c1?key=2c62c68a2b34d657f78d9ca069516fd7" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_19" bn="19"><i class="fas fa-hurricane"></i> A15VYQORA VORTEX 19 <span class="click-counter" id="count_19">0</span></a>
+        <!-- 20 -->
+        <a href="https://ensueddenied.com/m49p4v3f?key=6b1219666a5f26ed588af91ad5d4f2ae" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_20" bn="20"><i class="fas fa-ghost"></i> A15VYQORA SPIRIT 20 <span class="click-counter" id="count_20">0</span></a>
+        <!-- 21 -->
+        <a href="https://ensueddenied.com/r3j1jggiwn?key=3fed696d6f110db926e49f8329f4aef5" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_21" bn="21"><i class="fas fa-building"></i> A15VYQORA TOWER 21 <span class="click-counter" id="count_21">0</span></a>
+        <!-- 22 -->
+        <a href="https://ensueddenied.com/mt1c14jk5x?key=09f9c647af05739e2726af0cd6f159a5" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_22" bn="22"><i class="fas fa-rainbow"></i> A15VYQORA RAINBOW 22 <span class="click-counter" id="count_22">0</span></a>
+        <!-- 23 -->
+        <a href="https://ensueddenied.com/f3txjrk1?key=2d930a951eb305f71c079484e8c43319" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_23" bn="23"><i class="fas fa-chess-knight"></i> A15VYQORA KNIGHT 23 <span class="click-counter" id="count_23">0</span></a>
+        <!-- 24 -->
+        <a href="https://ensueddenied.com/mh16jz0xfu?key=a3f89a7d7907352876e2e641708fa3be" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_24" bn="24"><i class="fas fa-rocket"></i> A15VYQORA SPACE 24 <span class="click-counter" id="count_24">0</span></a>
+        <!-- 25 -->
+        <a href="https://ensueddenied.com/mefmpz8e6?key=843251c72a99eab91c53cd8363d3340b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_25" bn="25"><i class="fas fa-headphones"></i> A15VYQORA AUDIO 25 <span class="click-counter" id="count_25">0</span></a>
+        <!-- 26 -->
+        <a href="https://ensueddenied.com/ivm0is86ef?key=b001f98ca06b02d2bf742024cdc0b388" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_26" bn="26"><i class="fas fa-hand-fist"></i> A15VYQORA FORCE 26 <span class="click-counter" id="count_26">0</span></a>
+        <!-- 27 -->
+        <a href="https://ensueddenied.com/rp7cqeyny6?key=cf29519267bc11744a5843cbabcd8e15" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_27" bn="27"><i class="fas fa-paw"></i> A15VYQORA TIGER 27 <span class="click-counter" id="count_27">0</span></a>
+        <!-- 28 -->
+        <a href="https://ensueddenied.com/ihm5m8gin?key=45cade5ea591f22472f76af13f29e691" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_28" bn="28"><i class="fas fa-gem"></i> A15VYQORA PEARL 28 <span class="click-counter" id="count_28">0</span></a>
+        <!-- 29 -->
+        <a href="https://ensueddenied.com/mys9pu5pv?key=ba60fa6a329f73c39baf5d3d60eddb93" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_29" bn="29"><i class="fas fa-clock"></i> A15VYQORA TIME 29 <span class="click-counter" id="count_29">0</span></a>
+        <!-- 30 -->
+        <a href="https://ensueddenied.com/qtbmeb75t?key=640a338ef215d37134953f1b7c212a7e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_30" bn="30"><i class="fas fa-crown"></i> A15VYQORA CROWN 30 <span class="click-counter" id="count_30">0</span></a>
+        <!-- 31 -->
+        <a href="https://ensueddenied.com/bqpj8ft5z6?key=74542b0d5da2077f90590db956c234cc" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_31" bn="31"><i class="fas fa-paw"></i> A15VYQORA LION 31 <span class="click-counter" id="count_31">0</span></a>
+        <!-- 32 -->
+        <a href="https://ensueddenied.com/awzrmvgh?key=5348ca7f1b1a2c7404893c4c60d97997" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_32" bn="32"><i class="fas fa-plane"></i> A15VYQORA JET 32 <span class="click-counter" id="count_32">0</span></a>
+        <!-- 33 -->
+        <a href="https://ensueddenied.com/p95h1y3rk?key=3af037da60e13b79060ef24cf7066f8f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_33" bn="33"><i class="fas fa-snowflake"></i> A15VYQORA ICE 33 <span class="click-counter" id="count_33">0</span></a>
+        <!-- 34 -->
+        <a href="https://ensueddenied.com/metky14ymn?key=411bbd29980f88098059945b206e5210" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_34" bn="34"><i class="fas fa-snowflake"></i> A15VYQORA FROST 34 <span class="click-counter" id="count_34">0</span></a>
+        <!-- 35 -->
+        <a href="https://ensueddenied.com/e8v85t3ne9?key=0329222a5ed5380349d4d20a4dd7cc69" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_35" bn="35"><i class="fas fa-skull-crossbones"></i> A15VYQORA PIRATE 35 <span class="click-counter" id="count_35">0</span></a>
+        <!-- 36 -->
+        <a href="https://ensueddenied.com/xg8a6ucb?key=6c7655f65df19eef1357c117e35789e9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_36" bn="36"><i class="fas fa-spider"></i> A15VYQORA SPIDER 36 <span class="click-counter" id="count_36">0</span></a>
+        <!-- 37 -->
+        <a href="https://ensueddenied.com/i61kvma7?key=20ba39804df71a93fe30d0e02ed12502" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_37" bn="37"><i class="fas fa-fire-flame-curved"></i> A15VYQORA NITRO 37 <span class="click-counter" id="count_37">0</span></a>
+        <!-- 38 -->
+        <a href="https://ensueddenied.com/nxnhxikx?key=6a98a59bbdb0f40c3274fd8b34ed3fed" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_38" bn="38"><i class="fas fa-cloud-bolt"></i> A15VYQORA STORM 38 <span class="click-counter" id="count_38">0</span></a>
+        <!-- 39 -->
+        <a href="https://ensueddenied.com/ik4vufyc5?key=d66a3d70efa8e7827e980bf3f3f3dbd9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_39" bn="39"><i class="fas fa-star"></i> A15VYQORA FAIRY 39 <span class="click-counter" id="count_39">0</span></a>
+        <!-- 40 -->
+        <a href="https://ensueddenied.com/kffmxh5q?key=3a29791a77504d56e9f1ce9276d77324" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_40" bn="40"><i class="fas fa-arrow-right"></i> A15VYQORA ARROW 40 <span class="click-counter" id="count_40">0</span></a>
+        <!-- 41 -->
+        <a href="https://ensueddenied.com/zezdmyfuwd?key=51e23a81570bf25a827dfe4a1924e071" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_41" bn="41"><i class="fas fa-lock"></i> A15VYQORA CIPHER 41 <span class="click-counter" id="count_41">0</span></a>
+        <!-- 42 -->
+        <a href="https://ensueddenied.com/ntau1dz6qm?key=fb3e36e5d6755c852d1c9dfacd700b61" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_42" bn="42"><i class="fas fa-satellite"></i> A15VYQORA SAT 42 <span class="click-counter" id="count_42">0</span></a>
+        <!-- 43 -->
+        <a href="https://ensueddenied.com/s7nmmg87?key=b1f6d915a364f8e191a665c93a26fed8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_43" bn="43"><i class="fas fa-magic"></i> A15VYQORA MAGICWAND 43 <span class="click-counter" id="count_43">0</span></a>
+        <!-- 44 -->
+        <a href="https://ensueddenied.com/ztnuitcp3?key=dcdbe26f24c3c0362636d159665f67de" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_44" bn="44"><i class="fas fa-leaf"></i> A15VYQORA LEAF 44 <span class="click-counter" id="count_44">0</span></a>
+        <!-- 45 -->
+        <a href="https://ensueddenied.com/rr6xqs745?key=081b69f249e420024a5f8b61b2f58af9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_45" bn="45"><i class="fas fa-person-running"></i> A15VYQORA SPRINT 45 <span class="click-counter" id="count_45">0</span></a>
+        <!-- 46 -->
+        <a href="https://ensueddenied.com/bdjruxv4t?key=41b054ee27bc56fe9f95c4d22d0adfe4" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_46" bn="46"><i class="fas fa-chess-pawn"></i> A15VYQORA PAWN 46 <span class="click-counter" id="count_46">0</span></a>
+        <!-- 47 -->
+        <a href="https://ensueddenied.com/fqjury5z?key=d24ae746f27f6dbc9791e4c3ca61344a" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_47" bn="47"><i class="fas fa-gift"></i> A15VYQORA GIFT 47 <span class="click-counter" id="count_47">0</span></a>
+        <!-- 48 -->
+        <a href="https://ensueddenied.com/iejk0dmup?key=896ccc5cdd2265a056bffdaa35c5b277" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_48" bn="48"><i class="fas fa-gamepad"></i> A15VYQORA GAMEPAD 48 <span class="click-counter" id="count_48">0</span></a>
+        <!-- 49 -->
+        <a href="https://ensueddenied.com/gp244rnf93?key=bb46d51c78b00273d8316d6c7f4e238f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_49" bn="49"><i class="fas fa-earth-americas"></i> A15VYQORA EARTH 49 <span class="click-counter" id="count_49">0</span></a>
+        <!-- 50 -->
+        <a href="https://ensueddenied.com/gyp2m3vq?key=90eff9e759ea1b4f2270b6d6be4f05a3" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_50" bn="50"><i class="fas fa-caravan"></i> A15VYQORA VAN 50 <span class="click-counter" id="count_50">0</span></a>
+    </div>
+
+    <div class="card-footer">
+        <span><i class="far fa-clock"></i> 50 active deals · instant access</span>
+        <div class="reset-link" onclick="resetAllCounters()"><i class="fas fa-arrows-rotate"></i> reset counters</div>
+    </div>
+</div>
+
+<script>
+    const btnsTotal = 50;
+    let cMap = {};
+    for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0;
+    const STORE = 'mega_50_generated', RKEY = 'auto_rounds_v8', LKEY = 'auto_limit_v1';
+
+    function lCounts() { try { let s=localStorage.getItem(STORE); if(s) { let p=JSON.parse(s); for(let k in cMap) if(typeof p[k]==='number') cMap[k]=p[k]; } } catch(e){} }
+    function sCounts() { try { localStorage.setItem(STORE, JSON.stringify(cMap)); } catch(e){} }
+    function total() { return Object.values(cMap).reduce((a,b)=>a+b,0); }
+
+    function refresh() {
+        document.getElementById('globalCounter').innerText = total();
+        for (let i=1; i<=btnsTotal; i++) {
+            let cs = document.getElementById('count_'+i), b = document.getElementById('btn_'+i);
+            if (cs && b) { let v = cMap['btn_'+i]||0; cs.innerText = v; v>0 ? b.classList.add('clicked') : b.classList.remove('clicked'); }
+        }
+    }
+
+    function inc(id) { if(cMap.hasOwnProperty(id)) { cMap[id]++; refresh(); sCounts(); } }
+
+    function resetAllCounters() { for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0; refresh(); sCounts(); }
+
+    function openPopupSettings() {
+        let a = window.open('about:blank', '_blank');
+        if(a){a.document.write(`<html><head><title>Allow Popups</title><style>body{font-family:sans-serif;background:#1a0b2e;color:#fff;text-align:center;padding:40px;line-height:1.8;}.steps{background:#2d1b4e;padding:25px;border-radius:15px;display:inline-block;text-align:left;margin:20px;}.highlight{color:#ffd166;font-weight:bold;}code{background:#000;padding:4px 10px;border-radius:6px;color:#ffd166;font-size:16px;}button{background:#ff6b9d;color:#fff;border:none;padding:12px 30px;border-radius:30px;font-size:16px;cursor:pointer;margin-top:15px;}</style></head><body><h1>Allow Popups</h1><div class="steps"><p>Step 1: Copy URL:</p><p><code>chrome://settings/content/popups</code></p><p>Step 2: Open new tab (Ctrl+T)</p><p>Step 3: Paste & Enter</p><p>Step 4: Allow this site</p><p>Step 5: Come back & START</p></div><button onclick="navigator.clipboard.writeText('chrome://settings/content/popups').then(function(){}).catch(function(){})">COPY SETTINGS URL</button></body></html>`);a.document.close();}
+    }
+
+    function gRounds() { try { let s=localStorage.getItem(RKEY); return s ? parseInt(s) : 3; } catch(e){ return 3; } }
+    function gLimit() { try { let s=localStorage.getItem(LKEY); if(!s) return 0; let v=parseInt(s); return (isNaN(v)||v<0) ? 0 : v; } catch(e){ return 0; } }
+
+    function saveRoundSetting() {
+        let inp = document.getElementById('roundInput');
+        let linp = document.getElementById('limitInput');
+        let cf = document.getElementById('saveConfirm');
+        let v = parseInt(inp.value); if(isNaN(v)||v<1) v=1; if(v>100) v=100;
+        inp.value = v; localStorage.setItem(RKEY, v);
+        let lv = parseInt(linp.value);
+        if(isNaN(lv) || lv < 0) lv = 0;
+        if(lv > 9999) lv = 9999;
+        linp.value = lv; localStorage.setItem(LKEY, lv);
+        document.getElementById('roundDisplay').innerText = v;
+        document.getElementById('limitDisplay').innerText = (lv === 0) ? '∞' : lv;
+        cf.innerText = 'Saved: ' + v + ' round(s) · limit ' + (lv===0?'∞':lv);
+        setTimeout(()=>cf.innerText='',2500);
+    }
+
+    function loadRounds() {
+        let r = gRounds(); let l = gLimit();
+        document.getElementById('roundInput').value = r;
+        document.getElementById('limitInput').value = l;
+        document.getElementById('roundDisplay').innerText = r;
+        document.getElementById('limitDisplay').innerText = (l === 0) ? '∞' : l;
+    }
+
+    let running = false;
+    function startAutoClick() {
+        if(running){alert('Already running!');return;}
+        let btns = document.querySelectorAll('.offer-btn');
+        if(!btns.length){alert('No buttons!');return;}
+        let rds = gRounds(); let lim = gLimit();
+        let totalPossible = btns.length * rds;
+        let maxClicks = (lim === 0 || lim > totalPossible) ? totalPossible : lim;
+        let st = document.getElementById('autoStatus'), sBtn = document.getElementById('autoClickBtn');
+        running = true; sBtn.disabled = true; sBtn.textContent = 'CLICKING...';
+        let cur = 0, round = 1, idx = 0;
+        st.textContent = 'Round 1/'+rds+' · 0/'+maxClicks + (lim===0?' (∞)':' (limit '+lim+')');
+        let t = setInterval(() => {
+            if(cur >= maxClicks){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks' + (lim>0 && lim<totalPossible ? ' (limit reached)' : '');
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(round > rds){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks ('+btns.length+'×'+rds+')';
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(idx >= btns.length){
+                round++; idx = 0;
+                if(round > rds) return;
+                st.textContent = 'Round '+round+'/'+rds+' · '+cur+'/'+maxClicks;
+                return;
+            }
+            let b = btns[idx], bid = b.id, url = b.href || b.getAttribute('href');
+            if(url){
+                let a = document.createElement('a');
+                a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+                document.body.appendChild(a); a.click(); document.body.removeChild(a);
+                cur++;
+                if(bid && cMap.hasOwnProperty(bid)) inc(bid);
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' OK';
+            } else {
+                cur++;
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' SKIP';
+            }
+            idx++;
+        }, 2000);
+    }
+
+    for(let i=1;i<=btnsTotal;i++){let b=document.getElementById('btn_'+i);if(b)b.addEventListener('click',()=>inc('btn_'+i));}
+    lCounts();loadRounds();refresh();
+</script>
+</body>
+</html>
